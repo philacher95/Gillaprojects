@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+{% block title %}home_page{% endblock %}
+{% block body %}
+
+<header>
+    <h1>My First Python Website</h1>
+</header>
+{% include "include/navs.html" %}
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  #row1{
+  border-bottom: 4px solid yellow;
+  border-top: 3px solid yellow;
+  }
+  </style>
+<div class="row" id="row1"> <!-- row one div -->
+ <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/img/3d.jpg" alt="Los Angeles" width="1139.5" height="200]px">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/citty.jpg" alt="Chicago" width="1139.5" height="200px">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/hd.jpg" alt="New York" width="1139.5" height="200px">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div> <!-- end of row] one div -->
+
+
+<div class="row"> <!--main row two div -->
+      <div class="bg-light  col-sm-9 col-md-9 col-lg-9 col-xl-9"><!-- first col -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h2>Articles</h2>
+                </div>
+            </div>
+            <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div>
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                         <button type="button" class="btn btn-outline-dark"><a href="/article">Read more..</a></button>
+                      </div>
+                      <div style="margin-top: 50px; ">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                         <button type="button" class="btn btn-outline-dark"><a href="/article">Read more..</a></button>
+                      </div>
+                  </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                       <h1>News Online</h1>
+                      <hr>
+                  </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="row">
+                           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                 <h3>News sub title</h3>
+                                 <div class="row">
+                                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                     </div>
+                                 </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <h3>News sub title</h3>
+                                <div class="row">
+                                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                     </div>
+                                </div>
+                           </div>
+                      </div>
+                  </div>
+            </div>
+      </div>
+      <div class="bg-info col-sm-3 col-md-3 col-lg-3 col-xl-3">
+         advert
+      </div>
+</div><!--end of main row two div -->
+{% include "include/footer.html" %}
+</div>
+{% endblock %}
