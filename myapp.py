@@ -18,6 +18,10 @@ def article():
 def news():
     return render_template("news.html")
 
+@app.route("/change")
+def change():
+    return "i made a change !"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
