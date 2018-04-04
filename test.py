@@ -46,4 +46,4 @@ def log():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,host="10.21.244.214")
+    app.run(debug=True)
